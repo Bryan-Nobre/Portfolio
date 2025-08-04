@@ -1,96 +1,419 @@
-@media screen and (max-width: 576px){
+@media screen and (max-width: 344px) {
+    .circle-toggle{
+        width: 50px;
+        height: 50px;
+    }
 
-    .menu-container.active .menu-background{
+    .circle-toggle img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-menu a{
+        font-size: 10px;
+    }
+
+    .menu-container.active .menu-background {
+        width: 100%;
+    }
+
+    #ropeCanvas {
+        display: none;
+    }
+
+    .menu-container.active .link:nth-child(1) {
+        transform: translateX(-10px);
+        font-size: 10px;
+    }
+
+    .menu-container.active .link:nth-child(2) {
+        transform: translateX(-8px);
+        font-size: 10px;
+    }
+
+    .menu-container.active .link:nth-child(3) {
+        font-size: 10px;
+        transform: translateX(45px);
+    }
+
+    .menu-container.active .link:nth-child(4) {
+        transform: translateX(45px);
+        font-size: 10px;
+    }
+
+    .about__information-top,
+    .about__information-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        gap: 8px;
+    }
+
+    .home {
+        width: 100vw;
+        height: auto;
+    }
+
+    .right__block,
+    .block__fundo-img,
+    .about__left,
+    .page__about-info {
+        display: none;
+    }
+
+    .block__info h1 {
+        font-size: 26px;
+    }
+
+    .block__info p {
+        font-size: 15px;
+    }
+
+    .left__block {
+        transform: translateY(120px);
+        padding: 10px;
+    }
+
+    .info__welcome {
+        width: 40vw;
+        height: 5.5vh;
+    }
+
+    .info__welcome h2 {
+        width: 38vw;
+        height: 5vh;
+        font-size: 18px;
+    }
+
+    .button__enter {
+        width: 10rem;
+        height: 2.2rem;
+        font-size: 13px;
+    }
+
+    .info__curriculo {
+        font-size: 16px;
+    }
+
+    .about__right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .about__redirection {
+        height: auto;
+    }
+
+    .about {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    .about__top h1 {
+        font-size: 50px;
+    }
+
+    .about__top h3 {
+        font-size: 30px;
+    }
+
+    .about__text-information {
+        width: 100%;
+    }
+
+    .about__information-top{
+        padding: 0px 10px 0px 30px ;
+        align-items: start;
+    }
+
+    .about__information-bottom{
+        padding: 0px 10px 0px 30px ;
+        align-items: start;
+    }
+
+    .about__link{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about__link a{
+        width: 40vw;
+        font-size: 15px;
+    }
+
+    .ability {
+        min-height: auto;
+        padding-bottom: 3rem;
+        height: 200vh;
+    }
+
+    .ability__top h1 {
+        font-size: 80px;
+    }
+
+    .ability__card-menu {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .ability__card {
+        width: 90%;
+        max-width: 280px;
+    }
+
+    .ability__card-small {
+        height: 100px;
+    }
+
+    .ability__card-small i {
+        font-size: 5.5rem;
+    }
+
+    .ability__text {
+        padding: 10px 0 40px 0;
+    }
+
+    .project {
+        height: 125vh;
+        padding-bottom: 3rem;
+    }
+
+    .project__top h1 {
+        font-size: 2rem;
+    }
+
+    .project__block {
+        padding-top: 20px;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+    }
+
+    .block__portfolio {
+        width: 280px;
+        height: 200px;
+        background: red;
+    }
+
+    footer {
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .footer__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer__icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer__top a>img {
+        display: none;
+    }
+
+    .page__about {
+        display: flex;
+        flex-direction: column;
+        height: 260vh;
+        padding: 2rem 0;
+    }
+
+    .page__about-left {
+        transform: translateY(26rem);
+    }
+
+    .page__about-inform {
+        width: 90%;
+        align-items: center;
+    }
+
+    .page__about-inform p {
+        text-align: center;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .page__about-right {
+        transform: translateY(-44rem);
+    }
+
+    .PA__block-img,
+    .PA__block-img img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .page__about-bottom {
+        justify-content: center;
+        height: auto;
+        padding-top: 30px;
+    }
+
+    .ability__title-about h1 {
+        font-size: 40px;
+    }
+
+    .my__ability {
+        width: 90%;
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .social-bar {
+        padding-left: 20px;
+    }
+
+    .page__project {
+        grid-template-columns: 1fr;
+    }
+
+    .page__project-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .page__contact {
+        width: 90%;
+    }
+
+    form {
+        z-index: 2;
+    }
+
+    #ropeCanvas {
+        top: -5%;
+        height: 100px;
+        z-index: -1;
+    }
+
+    .page__contact{
+        height: 105vh;
+    }
+
+    .page__contact h1{
+        font-size: 35px;
+        padding-bottom: 5px;
+    }
+
+    .contact__block-info{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 576px) {
+
+    .menu-container.active .menu-background {
         width: 550px;
     }
 
-    .menu-container.active .link:nth-child(1){
+    .menu-container.active .link:nth-child(1) {
         transform: translateX(-80px);
     }
 
-    .menu-container.active .link:nth-child(3){
+    .menu-container.active .link:nth-child(3) {
         font-size: 15px;
         transform: translateX(70px);
     }
 
-    .menu-container.active .link:nth-child(4){
+    .menu-container.active .link:nth-child(4) {
         transform: translateX(80px);
     }
 
-    .nav-menu{
+    .nav-menu {
         gap: 10px;
     }
 
-    .home{
+    .home {
         width: 90%;
         height: 90vh;
     }
 
-    .right__block{
+    .right__block {
         width: 30%;
     }
 
-    .block__fundo-img{
+    .block__fundo-img {
         display: none;
     }
 
-    .block__info h1{
+    .block__info h1 {
         font-size: 38px;
     }
 
-    .block__info p{
+    .block__info p {
         font-size: 17px;
     }
 
-    .info__welcome{
+    .info__welcome {
         width: 18vh;
         height: 45px;
     }
 
-    .info__welcome h2{
+    .info__welcome h2 {
         width: 17.4vh;
         height: 40px;
         font-size: 20px;
     }
 
-    .button__enter{
+    .button__enter {
         width: 12rem;
         height: 2.5rem;
         font-size: 14px;
     }
 
-    .info__curriculo{
+    .info__curriculo {
         font-size: 18px;
     }
 
-    .about__left{
+    .about__left {
         display: none;
     }
 
-    .about__right{
+    .about__right {
         display: flex;
         align-items: center;
         justify-content: end;
         height: 70vh;
     }
 
-    .about__redirection{
+    .about__redirection {
         height: 60vh;
     }
 
-    .about{
+    .about {
         height: 95vh;
     }
 
-    .about__text-information{
+    .about__text-information {
         width: 100%;
     }
 
-    .ability{
+    .ability {
         height: 190vh;
     }
 
-    .ability__card-menu{
+    .ability__card-menu {
         padding-top: 30px;
         display: grid;
         place-items: center;
@@ -99,31 +422,31 @@
         width: 100%;
     }
 
-    .ability__card{
+    .ability__card {
         width: 400px;
     }
 
-    .ability__card-small{
+    .ability__card-small {
         height: 120px;
     }
 
-    .ability__card-small i{
+    .ability__card-small i {
         font-size: 7rem;
     }
 
-    .ability__text{
+    .ability__text {
         padding: 20px 0px 50px 0px;
     }
 
-    .project{
+    .project {
         height: 170vh;
     }
 
-    .project__top h1{
+    .project__top h1 {
         font-size: 3rem;
     }
 
-    .project__block{
+    .project__block {
         padding-top: 40px;
         display: grid;
         width: 100%;
@@ -131,107 +454,107 @@
         gap: 2rem;
     }
 
-    .block__portfolio{
+    .block__portfolio {
         width: 400px;
         height: 300px;
     }
 
-    footer{
+    footer {
         height: 12rem;
     }
 
-    .footer__top{
+    .footer__top {
         display: grid;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .footer__icons{
+    .footer__icons {
         display: flex;
         justify-content: center;
     }
 
-    .footer__top a > img{
+    .footer__top a>img {
         display: none;
     }
 
-    .page__about{
+    .page__about {
         display: flex;
         flex-direction: column;
         height: 200vh;
     }
 
-    .page__about-left{
+    .page__about-left {
         transform: translateY(40rem);
     }
 
-    .page__about-info{
+    .page__about-info {
         display: none;
     }
 
-    .page__about-inform{
+    .page__about-inform {
         width: 80%;
         align-items: center;
     }
 
-    .page__about-inform p{
+    .page__about-inform p {
         text-align: center;
         width: 30rem;
     }
 
-    .page__about-right{
+    .page__about-right {
         transform: translateY(-36rem);
     }
 
-    .PA__block-img{
+    .PA__block-img {
         width: 400px;
         height: 500px;
     }
 
-    .PA__block-img img{
+    .PA__block-img img {
         width: 400px;
         height: 500px;
     }
-    
-    .page__about-bottom{
+
+    .page__about-bottom {
         justify-content: end;
         height: 60vh;
         padding-top: 40px;
     }
 
-    .ability__title-about h1{
+    .ability__title-about h1 {
         font-size: 50px;
     }
 
-    .my__ability{
+    .my__ability {
         width: 90%;
         grid-template-columns: repeat(4, 110px);
         gap: 2rem;
     }
 
-    .social-bar{
+    .social-bar {
         padding-left: 50px;
     }
 
 
-    .page__project{
+    .page__project {
         grid-template-columns: repeat(2, 250px);
     }
 
-    .page__project-card{
+    .page__project-card {
         width: 250px;
     }
 
-    .page__contact{
+    .page__contact {
         width: 80%;
     }
 
-    form{
+    form {
         z-index: 2;
     }
-    
-    #ropeCanvas{
+
+    #ropeCanvas {
         top: -5%;
         height: 100;
         z-index: -1;
@@ -240,69 +563,69 @@
 }
 
 
-@media screen and (min-width: 577px) and (max-width: 768px){
+@media screen and (min-width: 577px) and (max-width: 768px) {
 
-    .right__block{
+    .right__block {
         width: 30%;
     }
 
-    .block__fundo-img img{
+    .block__fundo-img img {
         display: none;
     }
 
-    .block__info h1{
+    .block__info h1 {
         font-size: 40px;
     }
 
-    .block__info p{
+    .block__info p {
         font-size: 17px;
     }
 
-    .info__welcome{
+    .info__welcome {
         width: 18vh;
         height: 45px;
     }
 
-    .info__welcome h2{
+    .info__welcome h2 {
         width: 17.4vh;
         height: 40px;
         font-size: 20px;
     }
 
-    .button__enter{
+    .button__enter {
         width: 12rem;
         height: 2.5rem;
         font-size: 14px;
     }
 
-    .info__curriculo{
+    .info__curriculo {
         font-size: 18px;
     }
 
-    .about__left{
+    .about__left {
         display: none;
     }
 
-    .about__right{
+    .about__right {
         display: flex;
         align-items: center;
         justify-content: end;
         height: 55vh;
     }
 
-    .about__redirection{
+    .about__redirection {
         height: 60vh;
     }
 
-    .about{
+    .about {
         height: 80vh;
     }
 
-    .ability{
+    .ability {
         height: 140vh;
     }
 
-    .ability__card-menu{
+    .ability__card-menu {
         display: grid;
         place-items: center;
         grid-template-columns: repeat(2, 10px);
@@ -310,270 +633,270 @@
         width: 100%;
     }
 
-    .ability__card{
+    .ability__card {
         width: 350px;
     }
 
-    .ability__card-small{
+    .ability__card-small {
         height: 100px;
     }
 
-    .ability__card-small i{
+    .ability__card-small i {
         font-size: 5rem;
     }
 
-    .ability__text{
+    .ability__text {
         padding: 10px 0px 50px 0px;
     }
 
-    .project__block{
+    .project__block {
         display: grid;
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .block__portfolio{
+    .block__portfolio {
         width: 350px;
         height: 250px;
     }
 
-    .page__about{
+    .page__about {
         display: flex;
         flex-direction: column;
         height: 190vh;
     }
 
-    .page__about-left{
+    .page__about-left {
         transform: translateY(44rem);
     }
 
-    .page__about-info{
+    .page__about-info {
         display: none;
     }
 
-    .page__about-inform{
+    .page__about-inform {
         width: 80%;
         align-items: center;
     }
 
-    .page__about-inform p{
+    .page__about-inform p {
         text-align: center;
     }
 
-    .page__about-right{
+    .page__about-right {
         transform: translateY(-30rem);
     }
-    
-    .page__about-bottom{
+
+    .page__about-bottom {
         justify-content: end;
         height: 60vh;
         padding-top: 40px;
     }
 
-    .my__ability{
+    .my__ability {
         width: 90%;
         grid-template-columns: repeat(5, 110px);
         gap: 2rem;
     }
 
-    .social-bar{
+    .social-bar {
         padding-left: 50px;
     }
 
-    .page__project{
+    .page__project {
         grid-template-columns: repeat(2, 300px);
     }
 
 }
 
-@media screen and (min-width: 769px) and (max-width: 1150px){
-    .rope-container{
+@media screen and (min-width: 769px) and (max-width: 1150px) {
+    .rope-container {
         left: 90%;
     }
 
-    .home{
+    .home {
         width: 90%;
     }
 
-    .block__info h1{
+    .block__info h1 {
         font-size: 40px;
     }
 
-    .block__info p{
+    .block__info p {
         font-size: 15px;
     }
 
-    .button__enter{
+    .button__enter {
         width: 13rem;
     }
 
-    .block__fundo-img{
+    .block__fundo-img {
         width: 400px;
     }
 
-    .block__fundo-img img{
+    .block__fundo-img img {
         width: 400px;
         height: 600px;
     }
 
-    .follow-text{
+    .follow-text {
         font-size: 18px;
     }
 
-    .line{
+    .line {
         height: 130px;
     }
 
     /*about*/
 
-    .about__left{
+    .about__left {
         width: 100%;
     }
 
-    .about__block-img{
+    .about__block-img {
         width: 500px;
     }
 
-    .about__block-img img{
+    .about__block-img img {
         width: 500px;
         height: 500px;
     }
 
-    .about__right p{
+    .about__right p {
         width: 90%;
     }
 
-    .about__text-information{
+    .about__text-information {
         width: 100%;
     }
 
-    .about__top h1{
+    .about__top h1 {
         font-size: 70px;
     }
 
-    .about__top h3{
+    .about__top h3 {
         font-size: 35px;
     }
 
     /*ability*/
 
-    .ability__top h1{
+    .ability__top h1 {
         font-size: 85px;
     }
 
-    .ability__top h3{
+    .ability__top h3 {
         font-size: 35px;
     }
 
-    .ability__card{
+    .ability__card {
         width: 350px;
     }
 
-    .ability__card-small{
+    .ability__card-small {
         width: 190px;
         height: 100px;
     }
 
-    .ability__card-small i{
+    .ability__card-small i {
         font-size: 6rem;
     }
 
-    .ability__text{
+    .ability__text {
         padding: 10px 0px 50px 0px;
     }
 
     /*project*/
 
-    .page__about{
+    .page__about {
         height: 140vh;
     }
 
-    .project__top h1{
+    .project__top h1 {
         font-size: 3.5rem;
     }
 
-    .project__block{
+    .project__block {
         width: 80%;
     }
 
     /*page about*/
 
-    .page__about-left{
+    .page__about-left {
         height: 100vh;
     }
 
-    .page__about-inform{
+    .page__about-inform {
         width: 70%;
     }
 
-    .page__about-inform p{
+    .page__about-inform p {
         width: 30rem;
     }
 
-    .page__about-right{
+    .page__about-right {
         height: 100vh;
     }
 
-    .PA__block-img{
+    .PA__block-img {
         width: 500px;
         height: 600px;
     }
 
-    .PA__block-img img{
+    .PA__block-img img {
         width: 500px;
         height: 600px;
     }
 
-    .my__ability{
+    .my__ability {
         grid-template-columns: repeat(6, 150px);
     }
 }
 
-@media screen and (min-width: 1150px) and (max-width: 1500px){
-    .home{
+@media screen and (min-width: 1150px) and (max-width: 1500px) {
+    .home {
         width: 90%;
     }
 
     /*about*/
 
-    .about__left{
+    .about__left {
         width: 90%;
     }
 
-    .about__right{
+    .about__right {
         width: 80%;
     }
 
     /*ability*/
 
-    .ability__card{
+    .ability__card {
         width: 400px;
     }
 
     /*page about*/
 
-    .page__about{
+    .page__about {
         height: 140vh;
     }
 
-    .page__about-left{
+    .page__about-left {
         height: 100vh;
         width: 90%;
     }
 
-    .page__about-inform{
+    .page__about-inform {
         width: 60%;
     }
 
-    .page__about-right{
+    .page__about-right {
         height: 100vh;
     }
 
-    .page__about-bottom{
+    .page__about-bottom {
         width: 80vw;
     }
 
-    .my__ability{
+    .my__ability {
         grid-template-columns: repeat(8, 160px);
     }
 }
