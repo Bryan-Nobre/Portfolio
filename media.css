@@ -321,7 +321,7 @@
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 576px) {
+@media screen and (min-width: 345px) and (max-width: 576px) {
 
     .menu-container.active .menu-background {
         width: 550px;
@@ -899,4 +899,5 @@
     .my__ability {
         grid-template-columns: repeat(8, 160px);
     }
+
 }
