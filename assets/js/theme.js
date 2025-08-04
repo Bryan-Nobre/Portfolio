@@ -84,7 +84,7 @@ function toggleTheme() {
 
 // Função para restaurar o tema salvo no localStorage ao carregar a página
 function restoreTheme() {
-  const saved = localStorage.getItem("theme") || "light";
+  const saved = localStorage.getItem("theme") || "dark";
   document.body.classList.add(saved);
 }
 
@@ -158,3 +158,4 @@ function draw() {
 // Inicializa o tema salvo e começa o loop de física
 restoreTheme();
 updatePhysics();
+
