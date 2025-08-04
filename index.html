@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="Img/Minha_Logo_B.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="menu-container">
+
+            <div class="circle-toggle" onclick="toggleMenu()">
+                <img src="Img/Minha_Logo_B_fundo.png" alt="" class="logo">
+            </div>
+
+            <div class="menu-background" id="menuBg"></div>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="link">Início</a>
+                <a href="sobre.html" class="link">Sobre</a>
+                <a href="projetos.html" class="link">Projetos</a>
+                <a href="contato.html" class="link">Contato</a>
+            </nav>
+
+        </div>
+        <div class="rope-container">
+            <canvas id="ropeCanvas" width="1000" height="500"></canvas>
+        </div>
+    </header>
+
+    <main>
+        <section class="home">
+            <div class="left__block">
+                <div class="block__info">
+                    <div class="info__welcome">
+                        <h2>Bem-vindo </h2>
+                    </div>
+                    <h1>Eu sou <span class="info__text-light">Bryan <br>
+                            Henrique, Técnico</span> em <br>
+                        <span class="info__text-light">Desenvolvimento <br>
+                            de Sistemas</span>
+                    </h1>
+                    <p>Estou ajudando pessoas e empresas a criarem <br> soluções digitais modernas, otimizando
+                        resultados <br> com tecnologia e criatividade.</p>
+                    <div class="info__buttons">
+                        <a href="#" class="button__enter">Entrar em contato</a>
+                        <a href="assets/pdf/Liz-Cv.pdf" class="info__curriculo" download>Ver currículo <i class="ri-arrow-right-line "></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="right__block">
+                <div class="block__fundo-img">
+                    <img src="Img/Foto_01.png" alt="">
+                </div>
+                <div class="social-bar">
+                    <span class="follow-text">Siga-me</span>
+                    <div class="line"></div>
+                    <div class="social-icons">
+                        <a href="https://github.com/Bryan-Nobre" target="_blank"><i class="ri-github-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/bryan-henrique-7a5359377/" target="_blank"><i
+                                class="ri-linkedin-box-fill"></i></a>
+                        <a href="https://github.com/Bryan-Nobre" target="_blank"><i class="ri-whatsapp-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__top">
+                <h1>SOBRE MIM</h1>
+                <h3>Sobre Mim</h3>
+            </div>
+            <div class="about__redirection">
+                <div class="about__left">
+                    <div class="about__block-img"><img src="Img/Foto_02.png" alt="Foto"></div>
+                </div>
+                <div class="about__right">
+                    <h1>Sou Dinâmico e Criativo</h1>
+                    <p class="about__text-person">
+                        Atualmente curso o Técnico em Desenvolvimento de Sistemas, com foco em criar soluções
+                        tecnológicas práticas e eficientes. Tenho paixão por resolver problemas através da lógica,
+                        programação e design funcional.
+                        <br><br>
+                        Sou movido por desafios e acredito na força da colaboração para alcançar resultados reais. Busco
+                        sempre aprender novas tecnologias, me aprofundando tanto no front-end quanto no back-end, com o
+                        objetivo de me tornar um desenvolvedor fullstack completo e versátil.
+                        <br><br>
+                        Estou em constante evolução, e meu objetivo é ingressar no mercado com uma mentalidade
+                        inovadora, contribuindo com projetos autênticos e impactantes.
+                    </p>
+                    <div class="about__text-information">
+                        <div class="about__information-top">
+                            <h3>Nome:</h3>
+                            <p>Bryan Henrique</p>
+                            <h3>Endereço:</h3>
+                            <p>Brasília - DF</p>
+                        </div>
+                        <div class="about__information-bottom">
+                            <h3>Email:</h3>
+                            <p>mrbhron@gmail.com</p>
+                            <h3>Telefone:</h3>
+                            <p>(61) 98425-9381</p>
+                        </div>
+                    </div>
+                    <div class="about__link">
+                        <a href="assets/pdf/Liz-Cv.pdf" class="about__curriculo" download="">Baixar Currículo</a>
+                        <a href="" class="about__contact">Entrar em Contato</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ability">
+            <div class="ability__top">
+                <h1>MINHAS</h1>
+                <h3>Habilidades</h3>
+            </div>
+            <div class="ability__card-menu">
+                <div class="ability__card">
+                    <div class="ability__card-small">
+                        <i class="ri-code-box-line"></i>
+                    </div>
+                    <div class="ability__text">
+                        <h3>Web Developer</h3>
+                        <hr>
+                        <p>Profissional especializado em desenvolver soluções digitais funcionais, escaláveis e
+                            otimizadas para a web. Atua no desenvolvimento de sites, sistemas e aplicações utilizando
+                            linguagens como HTML, CSS, JavaScript e frameworks modernos. Seu foco está na performance,
+                            segurança e estrutura lógica dos projetos.</p>
+                    </div>
+                </div>
+                <div class="ability__card">
+                    <div class="ability__card-small">
+                        <i class="ri-ball-pen-line"></i>
+                    </div>
+                    <div class="ability__text">
+                        <h3>Web Designer</h3>
+                        <hr>
+                        <p>Responsável por criar a identidade visual de sites e plataformas digitais, o Web Designer une
+                            criatividade e técnica para desenvolver layouts atrativos, alinhados à marca e à experiência
+                            do usuário. Trabalha com cores, tipografias, espaçamentos e elementos visuais que tornam a
+                            navegação intuitiva e envolvente.</p>
+                    </div>
+                </div>
+                <div class="ability__card">
+                    <div class="ability__card-small">
+                        <i class="ri-device-line"></i>
+                    </div>
+                    <div class="ability__text">
+                        <h3>Interface UI/UX</h3>
+                        <hr>
+                        <p>Especialista em projetar interfaces (UI) e experiências (UX) centradas no usuário. Atua desde
+                            a pesquisa e arquitetura da informação até o protótipo final, garantindo que cada interação
+                            seja fluida, acessível e funcional. Seu objetivo é transformar ideias em jornadas digitais
+                            memoráveis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project">
+            <div class="project__top">
+                <h1>Projetos em Destaque</h1>
+                <div class="project__line"></div>
+            </div>
+            <div class="project__block-menu">
+                <div class="project__block">
+                    <div class="block__portfolio">
+                        <div class="card-content">
+                            <h3>Projeto</h3>
+                            <p>descrição do projeto</p>
+                            <a href="">Ver projeto</a>
+                        </div>
+                    </div>
+                    <div class="block__portfolio">
+                        <div class="card-content">
+                            <h3>Projeto</h3>
+                            <p>descrição do projeto</p>
+                            <a href="">Ver projeto</a>
+                        </div>
+                    </div>
+                    <div class="block__portfolio">
+                        <div class="card-content">
+                            <h3>Projeto</h3>
+                            <p>descrição do projeto</p>
+                            <a href="">Ver projeto</a>
+                        </div>
+                    </div>
+                    <div class="block__portfolio">
+                        <div class="card-content">
+                            <h3>Projeto</h3>
+                            <p>descrição do projeto</p>
+                            <a href="">Ver</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer__top">
+            <a href="index.html"><img src="Img/Minha_Logo_Bhron_fundo.png" alt="Bhron"></a>
+            <div class="footer__option">
+                <a href="sobre.html">Sobre</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="footer__icons">
+                <a href="https://github.com/Bryan-Nobre" target="_blank"><i class="ri-github-fill"></i></a>
+                <a href="https://www.linkedin.com/in/bryan-henrique-7a5359377/" target="_blank"><i
+                        class="ri-linkedin-box-fill"></i></a>
+                <a href="https://github.com/Bryan-Nobre" target="_blank"><i class="ri-whatsapp-fill"></i></a>
+            </div>
+        </section>
+        <section class="footer__bottom">
+            <p>&copy; Bryan. Todos os direitos reservados</p>
+        </section>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu-container').classList.toggle('active');
+        }
+    </script>
+
+
+</body>
+
+</html>
